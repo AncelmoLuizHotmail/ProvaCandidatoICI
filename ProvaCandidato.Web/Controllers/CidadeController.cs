@@ -65,6 +65,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao criar cidade");
                 return View(cidadeViewModel);
             }
         }
@@ -101,6 +102,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao alterar cidade");
                 return View(cidadeViewModel);
             }
         }
@@ -125,6 +127,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao excluir cidade");
                 return View();
             }
         }

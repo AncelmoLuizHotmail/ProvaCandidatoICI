@@ -73,6 +73,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao criar cliente");
                 return View(clienteViewModel);
             }
         }
@@ -113,6 +114,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao alterar cliente");
                 return View(clienteViewModel);
             }
         }
@@ -137,6 +139,7 @@ namespace ProvaCandidato.Controllers
             }
             catch
             {
+                MessageHelper.DisplayErrorMessage(this, "Error ao excluir cliente");
                 return View();
             }
         }
